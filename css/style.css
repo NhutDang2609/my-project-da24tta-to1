@@ -1,14 +1,40 @@
-﻿table,td,tr{
-	
+﻿
+table,td,th,tr{
+	border-collapse:collapse;
 	border:2px solid black;
+		
+}
+h1{
+	text-align:center;
+	border:5px dotted #9999FF;
+	border-radius:20%;
+	padding:10px;
+	margin-left: 23%;
+	width:50%;
+	
+}
+p{
+	margin-left:15px;
+	font-size:110%;
+}
+b{
+	margin-left:10px;
+	font-size:130%;
 }
 
-
-
-
-
-
-
+tr:hover {
+	background-color: #9999FF;
+}
 p{
+	padding:5px;
+}
+
+body{
+	background-color:#CCCCFF;
+}
+
+footer{
+	background-color:#9999FF;
+	text-align: center;
 	padding:5px;
 }
