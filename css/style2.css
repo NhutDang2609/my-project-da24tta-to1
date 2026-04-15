@@ -1,0 +1,49 @@
+﻿h3#title{
+	text-align:center;
+	text-transform: uppercase;
+}
+
+div.form-group{
+	margin:10px;
+	margin-left: 15px;
+
+}
+
+div.container{
+	padding:15px;
+	
+}
+
+form#frmLogin{
+	background-color: #b0b0e0;
+	padding:10px;
+	margin:5px;
+
+}
+input.form-control{
+	width:100%;
+	display:block;
+	
+}
+
+input.buttom{
+	padding:5px;
+	border-radius:5%;
+	background-color:#9999FF;
+	border:none;
+	margin-left:15px;
+	margin-top:5px;
+	
+
+}
+
+body{
+	background-color:#CCCCFF;
+}
+
+footer{
+	background-color:#9999FF;
+	text-align: center;
+	padding:5px;
+	margin-top:500px;
+}
