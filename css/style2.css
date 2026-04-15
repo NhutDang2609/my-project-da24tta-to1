@@ -6,22 +6,28 @@
 div.form-group{
 	margin:10px;
 	margin-left: 15px;
+	font-size:125%;
+	text-align:center;
 
 }
 
 div.container{
-	padding:15px;
-	
+	padding:100px;
+	margin-left:300px;
+	margin-right:300px;
 }
 
 form#frmLogin{
 	background-color: #b0b0e0;
-	padding:10px;
+	padding:50px;
 	margin:5px;
-
+	border-radius:40%;
+	border:20px solid #9999FF;
+	
+	
 }
 input.form-control{
-	width:100%;
+	margin-left:100px;
 	display:block;
 	
 }
@@ -31,19 +37,24 @@ input.buttom{
 	border-radius:5%;
 	background-color:#9999FF;
 	border:none;
-	margin-left:15px;
-	margin-top:5px;
+	margin-left:90px;
+	margin-top:10px;
+	font-size:15px;
+	
 	
 
 }
 
 body{
-	background-color:#CCCCFF;
+	background-image:url('../assets/nen2.jpg');
+	 background-size: cover;
 }
 
 footer{
 	background-color:#9999FF;
 	text-align: center;
 	padding:5px;
-	margin-top:500px;
+	margin-top:60px;
+	
+	
 }

@@ -9,50 +9,75 @@
 	<body>
 		<div class ="container">
 			<form id ="frmLogin">
-				<h3 id ="title">Đăng ký</h3>
+				<h2 id ="title">Đăng ký</h2>
 				<div class =" form-group">
 					<lable for ="txtUsername">Họ tên:</lable>
 					<input class =" form-control" type =" text" id ="txtUsername" name ="txtUsername">
-
-
-					<div class="form-group">
-						<lable for ="txtUsername">Giới tính:</lable>
-						<lable for ="txtUsername">Nam <input type ="radio" name="rdGioitinhn"> </lable>
-						<lable for ="txtUsername"></lable>
-						<lable for ="txtUsername">Nữ <input type ="radio" name="rdGioitinh"> </lable>
+					
+					<br>
+					<lable for ="txtUsername">Giới tính:</lable>
+					<br>
+					
+					<div class="rdgioitinh">
+					<lable for ="txtrdgioitinh">Nam <input type ="radio" name="rdGioitinhn"> </lable>
+					<lable for ="txtrdgioitinh"></lable>
+					<lable for ="txtrdgioitinh">Nữ <input type ="radio" name="rdGioitinh"> </lable>
 					</div>
 
-					<lable for ="txtUsername">MSSV:</lable>
+					
+					<label for="birthdaytime">Ngày sinh:</label>
+					<div class="txtngaysinh">
+ 					 <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+					</div>
+						
+					<br>
+					<lable for ="txtmssv">MSSV:</lable>
 					<input class =" form-control" type =" number" id ="txtmssv" name ="txtmassv">
+						
 
-					<lable for ="txtUsername">Ngày sinh:</lable>
-					<input class =" form-control" type =" datet" id ="txtngaysinh" name ="txtngaysinh">
+					
 
-					<lable for ="txtUsername">Địa chỉ:</lable>
+					<br>
+					<lable for ="txtdiachi">Địa chỉ:</lable>
 					<input class =" form-control" type =" text" id ="txtdiachi" name ="txtdiachi">
-
-					<lable for ="txtUsername">Số ĐT:</lable>
+						<br>
+					<lable for ="txtdt">Số ĐT:</lable>
 					<input class =" form-control" type =" number" id ="txtdt" name ="txtdt">
+
+					<br>
+					<br>
 
 	
 					<lable for ="txtPassword"> Điểm mạnh:</lable>
+					<br>
+					<br>
+   					 <div class="form-check">
+     					   	<input class="form-check-input" type="checkbox" id="cb1" name="txtlb1">
+       					 	<label class="form-check-label" for="cb1">Thiết kế web</label>
+    					</div>
 
-					<div class =" form-group">
+    					<div class="form-check">
+        					<input class="form-check-input" type="checkbox" id="cb2" name="txtlb2">
+        					<label class="form-check-label" for="cb2">Ngôn ngữ C</label>
+    					</div>
 
-					
-					<lable for ="txtPassword"> Thiết kê được wed</lable>
-					<input class =" form-control" type =" checkbox" name ="txtlb">
-
-					<lable for ="txtPassword"> ngôn ngữ C:</lable>
-					<input class =" form-control" type =" checkbox" id ="txtdt" name ="txtlb">
-
-					<lable for ="txtPassword"> biết làm ppt:</lable>
-					<input class =" form-control" type =" checkbox" id ="txtdt" name ="txtlb">
-					</div>
-
+    					<div class="form-check">
+       					 	<input class="form-check-input" type="checkbox" id="cb3" name="txtlb3">
+       					 	<label class="form-check-label" for="cb3">Biết làm PPT</label>
+   					 </div>
+					<br>
+					<input class="button" type="submit" id="sbLogin" name="sbLogin" value="Gửi">
 				</div>
-				<input class="buttom" type="submit" id="sbLogin" name="sbLogin" value="Đăng nhập">
-				<input class ="buttom" type="reset" id="rsCancel" name="rsCancel" value="Nhập lại">
+				
+
+				<h3>Giới thiệu </h3>
+				<p>Xin chào! Tôi Vũ Thị Nhựt Đang, sinh viên ngành Công nghệ thông tin. 
+					Tôi yêu thích lập trình và Thiết kế wed. Mục tiêu của tôi trở thành một lập trình viên chuyên nghiệp.
+				<br>
+				
+					Tôi đang học tại Đại học Trà Vinh. Tôi luôn cố gắng học tập và phát triển kỹ năng mỗi ngày.
+				 </p>
+				
 			</form>
 		</div>
 		

@@ -1,4 +1,4 @@
-﻿h3#title{
+﻿h2#title{
 	text-align:center;
 	text-transform: uppercase;
 }
@@ -6,11 +6,16 @@
 div.form-group{
 	margin:10px;
 	margin-left: 15px;
+	font-size:115%;
+	
+	
 
 }
 
 div.container{
-	padding:15px;
+	padding:50px;
+	padding-left:90px;
+	padding-right:90px;
 	
 }
 
@@ -18,7 +23,8 @@ form#frmLogin{
 	background-color: #b0b0e0;
 	padding:10px;
 	margin:5px;
-
+	border-radius:10%;
+	border:20px solid #9999FF;
 }
 input.form-control{
 	width:100%;
@@ -26,24 +32,46 @@ input.form-control{
 	
 }
 
-input.buttom{
-	padding:5px;
+input.button{
+	padding:7px;
 	border-radius:5%;
 	background-color:#9999FF;
 	border:none;
 	margin-left:15px;
 	margin-top:5px;
+	font-size:100%;
+	text-align:right;
 	
 
 }
 
+div.rdgioitinh{
+	margin-left:10px;
+	margin: 10px;
+	text-align:center;
+}
+
+div.form-check{
+	margin-left:10px;
+}
+
+div.txtngaysinh{
+	text-align:center;
+}
+
+p{
+	margin-left:20px;
+	font-size:125%;
+}
+
 body{
-	background-color:#CCCCFF;
+	background-image:url('../assets/nen2.jpg');
+	 background-size: cover;
 }
 
 footer{
 	background-color:#9999FF;
 	text-align: center;
 	padding:5px;
-	margin-top:500px;
+	
 }
