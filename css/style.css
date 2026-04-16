@@ -4,7 +4,7 @@
 	margin:5px;
 	border-radius:20%;
 	border:20px solid #9966CC;
-  	 font-size:115%;
+  	 
 	margin-left:130px;
 	margin-right:130px;
 	margin-top:70px;
@@ -12,14 +12,32 @@
 }
 
 div.nen{
-	background-color:#F0F8FF;
-	background-color: rgba(255, 255, 255, 0.67);
+	background-color:#E6E6FA;
+	background-color: rgba(240, 240, 260, 0.7);
 }
 
-  
+nav,a.thanhba{
+		text-align:left;
+		border:5px solid #9966CC;
+		text-size:60px;
+		background-color:#9966CC;
+		color:black;
+		font-weight:bold;
+		text-decoration: none;
+		text-align:center;
+	}
+
+
+
+span{
+	
+	font-weight:bold;
+}  
+
 table,td,th,tr{
 	border-collapse:collapse;
 	border:2px solid black;
+	font-size:100%;
 		
 }
 h1{
@@ -33,11 +51,11 @@ h1{
 }
 p{
 	margin-left:15px;
-	font-size:110%;
+	font-size:115%;
 }
 b{
 	margin-left:10px;
-	font-size:130%;
+	font-size:140%;
 }
 
 tr:hover {
@@ -47,13 +65,18 @@ p{
 	padding:5px;
 }
 
+
+ul,ol{
+	font-size:115%;
+
+}
 body{
-	background-image:url('../assets/nen2.jpg');
+	background-image:url('../assets/hinh3.jpg!d');
 	 background-size: cover;
 }
 
 footer{
 	background-color:#9966CC;
 	text-align: center;
-	padding:5px;
+	padding:10px;
 }

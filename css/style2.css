@@ -17,14 +17,28 @@ div.form-group{
 
 }
 
+
+
+nav,a.thanhba{
+		text-align:left;
+		border:5px solid #9966CC;
+		text-size:60px;
+		background-color:#9966CC;
+		color:black;
+		font-weight:bold;
+		text-decoration: none;
+		text-align:center;
+	} 
 div.container{
 	padding:100px;
 	margin-left:300px;
 	margin-right:300px;
+	
 }
 
 form#frmLogin{
-	background-color: #b0b0e0;
+	background-color:#E6E6FA;
+	background-color: rgba(240, 240, 260, 0.7);
 	padding:50px;
 	margin:5px;
 	border-radius:40%;
@@ -52,14 +66,14 @@ input.buttom{
 }
 
 body{
-	background-image:url('../assets/nen2.jpg');
+	background-image:url('../assets/hinh3.jpg!d');
 	 background-size: cover;
 }
 
 footer{
 	background-color:#9966CC;
 	text-align: center;
-	padding:5px;
+	padding:10px;
 	margin-top:60px;
 	
 	

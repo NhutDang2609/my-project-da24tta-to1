@@ -17,10 +17,13 @@ div.container{
 	padding-left:90px;
 	padding-right:90px;
 	
+	
+	
 }
 
 form#frmLogin{
-	background-color: #b0b0e0;
+	background-color:#E6E6FA;
+	background-color: rgba(240, 240, 260, 0.7);
 	padding:10px;
 	margin:5px;
 	border-radius:10%;
@@ -51,7 +54,7 @@ h2{
 	
 	text-align:center;
 	border:7px dotted #9966CC;
-	border-radius:5%;
+	border-radius:15%;
 	padding:5px;
 	margin-left: 25%;
 	width:50%;
@@ -83,12 +86,14 @@ lable.gioithieu1{
     display: flex;
     align-items: center; /* căn ngang hàng */
 	margin-left:30%;
+	font-size:115%;
     
 }
 div.rdgioitinh{
 	margin-left:10px;
 	margin: 10px;
 	text-align:center;
+	font-size:115%;
 }
 
 
@@ -109,14 +114,26 @@ p{
 	font-size:125%;
 }
 
+
+nav,a.thanhba{
+		text-align:left;
+		border:5px solid #9966CC;
+		text-size:60px;
+		background-color:#9966CC;
+		color:black;
+		font-weight:bold;
+		text-decoration: none;
+		text-align:center;
+	}
+
 body{
-	background-image:url('../assets/nen2.jpg');
+	background-image:url('../assets/hinh3.jpg!d');
 	 background-size: cover;
 }
 
 footer{
 	background-color:#9966CC;
 	text-align: center;
-	padding:5px;
+	padding:10px;
 	
 }
