@@ -1,4 +1,22 @@
-﻿
+﻿div.nen{
+	
+	padding:50px;
+	margin:5px;
+	border-radius:20%;
+	border:20px solid #9966CC;
+  	 font-size:115%;
+	margin-left:130px;
+	margin-right:130px;
+	margin-top:70px;
+	margin-bottom:70px;
+}
+
+div.nen{
+	background-color:#F0F8FF;
+	background-color: rgba(255, 255, 255, 0.67);
+}
+
+  
 table,td,th,tr{
 	border-collapse:collapse;
 	border:2px solid black;
@@ -6,10 +24,10 @@ table,td,th,tr{
 }
 h1{
 	text-align:center;
-	border:6px dotted #9999FF;
-	border-radius:20%;
+	border:20px dotted #9966CC;
+	border-radius:15%;
 	padding:10px;
-	margin-left: 23%;
+	margin-left: 22%;
 	width:50%;
 	
 }
@@ -23,18 +41,19 @@ b{
 }
 
 tr:hover {
-	background-color: #9999FF;
+	background-color: #9966CC;
 }
 p{
 	padding:5px;
 }
 
 body{
-	background-color:#CCCCFF;
+	background-image:url('../assets/nen2.jpg');
+	 background-size: cover;
 }
 
 footer{
-	background-color:#9999FF;
+	background-color:#9966CC;
 	text-align: center;
 	padding:5px;
 }
