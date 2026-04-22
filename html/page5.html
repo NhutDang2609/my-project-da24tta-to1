@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<title> Đăng Ký</title>
+		<meta charset="UTF-8">
+		<link rel ="stylesheet" href="../css/style5.css">
+
+	</head>
+	<body>
+<nav>
+
+		<a class="thanhba" href="../index.html">TRANG CHỦ </a>
+		<a class="thanhba" href="page1.html">THÔNG TIN CÁ NHÂN</a> 
+  		<a class="thanhba" href="page2.html">ĐĂNG NHẬP</a> 
+  		<a class="thanhba" href="page3.html"> ĐĂNG KÝ </a>
+		<a class="thanhba" href="page4.html"> HÓA ĐƠN THANH TOÁN </a>
+		<a class="thanhba" href="page5.html"> IN BẢNG CỬU CHƯƠNG </a>
+		<a class="thanhba" href="page6.html"> BẢNG HỌC PHÍ </a>
+	</nav>
+
+
+		
+			<form id="frmInBCC">
+    <h2>IN BẢNG CỬU CHƯƠNG</h2>
+
+    <label for="txtUser"><b>Nhập số từ 2-9</b></label>
+    <input class="form-control" type="number" id="txtUser" name="txtUser">
+    <button type="button" onclick="inBCC()">IN</button>
+
+    <div id="kq"></div>
+</form>
+
+<script>
+function inBCC(){
+    let num = parseInt(document.getElementById("txtUser").value);
+    let kq = "";
+
+    if (!num || num < 2 || num > 9) {
+        alert("Nhập từ 2-9");
+        return;
+    }
+
+    for(let i = 1; i <= 10; i++){
+        kq += `${num} x ${i} = ${num * i}<br>`;
+    }
+
+    document.getElementById("kq").innerHTML = kq;
+}
+</script>
+		
+		<footer> Trang web được thiết kế bởi VŨ THỊ NHỰT ĐANG@2026 trên html tĩnh</footer>
+	</body>
+</html>

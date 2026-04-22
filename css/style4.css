@@ -18,9 +18,9 @@ div.nen{
 
 nav,a.thanhba{
 		text-align:left;
-		border:5px solid #8c63b6;
+		border:5px solid #9966CC;
 		text-size:60px;
-		background-color:#8c63b6;
+		background-color:#9966CC;
 		color:black;
 		font-weight:bold;
 		text-decoration: none;
@@ -29,34 +29,24 @@ nav,a.thanhba{
 
 
 
-span{
-	
-	font-weight:bold;
-}  
+
 
 table,td,th,tr{
 	border-collapse:collapse;
 	border:2px solid black;
 	font-size:100%;
+	margin-left: 250px;
+	height: 60px;
+	width: 500px;
 		
 }
-h1{
-	text-align:center;
-	border:20px dotted #9966CC;
-	border-radius:15%;
-	padding:10px;
-	margin-left: 22%;
-	width:50%;
-	
+
+
+
+h3{
+	text-align: center;
 }
-p{
-	margin-left:15px;
-	font-size:115%;
-}
-b{
-	margin-left:10px;
-	font-size:140%;
-}
+
 
 tr:hover {
 	background-color: #9966CC;
@@ -66,13 +56,11 @@ p{
 }
 
 
-ul,ol{
-	font-size:115%;
 
-}
 body{
 	background-color: #bea3da;
 }
+
 footer{
 	background-color:#9966CC;
 	text-align: center;

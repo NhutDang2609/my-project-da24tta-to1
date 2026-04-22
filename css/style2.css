@@ -1,7 +1,7 @@
 ﻿h3#title{
 	text-align:center;
 	text-transform: uppercase;
-	border:8px dotted #9966CC;
+	border:8px dotted #8c63b6;
 	border-radius:15%;
 	padding:8px;
 	margin-left: 22%;
@@ -11,7 +11,7 @@
 
 div.form-group{
 	margin:10px;
-	margin-left: 25px;
+	margin-left: 35px;
 	font-size:125%;
 	text-align:center;
 
@@ -21,14 +21,14 @@ div.form-group{
 
 nav,a.thanhba{
 		text-align:left;
-		border:5px solid #9966CC;
+		border:5px solid #8c63b6;
 		text-size:60px;
-		background-color:#9966CC;
+		background-color:#8c63b6;
 		color:black;
 		font-weight:bold;
 		text-decoration: none;
 		text-align:center;
-	} 
+	}
 div.container{
 	padding:100px;
 	margin-left:300px;
@@ -42,12 +42,12 @@ form#frmLogin{
 	padding:50px;
 	margin:5px;
 	border-radius:40%;
-	border:10px solid #9966CC;
+	border:10px solid #8c63b6;
 	
 	
 }
 input.form-control{
-	margin-left:100px;
+	margin-left:130px;
 	display:block;
 	
 }
@@ -55,9 +55,8 @@ input.form-control{
 input.buttom{
 	padding:5px;
 	border-radius:5%;
-	background-color:#9966CC;
 	border:none;
-	margin-left:90px;
+	margin-left:110px;
 	margin-top:10px;
 	font-size:15px;
 	
@@ -66,12 +65,10 @@ input.buttom{
 }
 
 body{
-	background-image:url('../assets/hinh3.jpg!d');
-	 background-size: cover;
+	background-color: #bea3da;
 }
-
 footer{
-	background-color:#9966CC;
+	background-color:#8c63b6;
 	text-align: center;
 	padding:10px;
 	margin-top:60px;

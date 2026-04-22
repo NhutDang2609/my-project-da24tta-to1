@@ -117,9 +117,9 @@ p{
 
 nav,a.thanhba{
 		text-align:left;
-		border:5px solid #9966CC;
+		border:5px solid #8c63b6;
 		text-size:60px;
-		background-color:#9966CC;
+		background-color:#8c63b6;
 		color:black;
 		font-weight:bold;
 		text-decoration: none;
@@ -127,10 +127,8 @@ nav,a.thanhba{
 	}
 
 body{
-	background-image:url('../assets/hinh3.jpg!d');
-	 background-size: cover;
+	background-color: #bea3da;
 }
-
 footer{
 	background-color:#9966CC;
 	text-align: center;
