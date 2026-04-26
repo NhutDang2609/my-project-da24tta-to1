@@ -4,49 +4,63 @@
 		<title> Buổi 1</title>
 		<meta charset="UTF-8">
 		<style>
-		a{
-			font-size:150%;
-			text-decoration:none;
-			color:black;
-		}
-		
-		ul{
-			text-align:center;
-			background-color:#E6E6FA;
-	background-color: rgba(240, 240, 260, 0.7);
-			padding:50px;
-			margin:100px;
-			border-radius:10%;
-			border:20px solid #9966CC;
-			list-style: none;
-			line-height:30px;
-    
-
-		}
-
-		div{
-			margin-left:80px;
-			
-			margin-right:80px;
-			
-			
-
-		}
-
-		
-		
-		
-		body{
-	background-color: #bea3da;
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: linear-gradient(135deg, #e6d9f2, #d9c8ec); /* tím pastel nhạt hơn */
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-		
-		footer{
-			background-color:#9966CC;
-			text-align: center;
-			padding:10px;
-			margin-top:22%;
-			
-		}
+
+/* Khung menu */
+ul {
+  text-align: center;
+  background: #ffffff;
+  padding: 40px;
+  margin: 80px auto;
+  border-radius: 16px;
+  border: 3px solid #b799d6; /* dùng màu tím của footer */
+  list-style: none;
+  max-width: 500px;
+
+  /* ánh tím pastel loang ra từ màu footer */
+  box-shadow: 0 0 20px rgba(183, 153, 214, 0.6),
+              0 0 40px rgba(183, 153, 214, 0.4),
+              0 0 60px rgba(183, 153, 214, 0.3);
+}
+
+/* Liên kết */
+a {
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #5a4b6f;
+  display: block;
+  padding: 12px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+a:hover {
+  background: #f3ecfa;
+  color: #7b4ca0;
+  transform: translateX(4px);
+}
+
+/* Footer */
+footer {
+  background-color: #b799d6; /* giữ nguyên màu tím pastel đậm */
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 0 -4px 12px rgba(183, 153, 214, 0.4);
+}
 
 		</style>
 	</head>
@@ -64,15 +78,15 @@
 			</li>
 
 			<li>
-			<a href="page4.html"> Hóa Đơn Thanh Toán </a>
+				<a href="html/page4.html"> Hóa Đơn Thanh Toán </a>
 			</li>
 
 			<li>
-			<a href="page5.html"> Bảng Cửu Chương </a>
+				<a href="html/page5.html"> Bảng Cửu Chương </a>
 			</li>
 
 			<li>
-			<a href="page6.html"> Bảng Học Phí </a>
+				<a href="html/page6.html"> Bảng Học Phí </a>
 			</li>
 		</b>
 		</ul>

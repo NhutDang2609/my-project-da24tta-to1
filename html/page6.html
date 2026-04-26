@@ -18,26 +18,47 @@
 		<a class="thanhba" href="page6.html"> BẢNG HỌC PHÍ </a>
 	</nav>
 
-		<h2>BẢNG HỌC PHÍ</h2>
-		<div class ="container">
-			<input type="button" onclick="add()"  >Thêm</input>
+		
+
+		<div class="container">
+ 		   <h2>BẢNG HỌC PHÍ</h2>
+
+			<div class="Row" >
+					<input class="form-control" type="text" placeholder="Nhập môn">
+					<br>
+
+					<input class="form-control" type="text" placeholder="Nhập số tín chỉ">
+					<br>
+
+
+					 
+					<select>
+					<option value="500" >Cơ sở ngành </opsion>
+					<option value="550" >Chuyên ngành </opsion>
+					</select>
+
+					<br>
+					<br>
+					 <input type="button" value="Thêm" onclick="add()">
+					<input type="button" value="Xóa" onclick="add()">
+			</div>
 			
 		</div>
 
-		<div class="Row">
-
-		</div>
-
+		
 
 		<script>
-			function add(){
-				const myRow =document.createElement("div");
-				myRow.setAttribute("class","row");
-				const myText =document.createElement("hehe");
-				myRow.appendChild(myText);
-			}
+		function add() {
+   		 const myRow = document.createElement("div");
+  		  myRow.setAttribute("class", "row");
 
+    		const myText = document.createTextNode("hehe");
+    		myRow.appendChild(myText);
+
+    		document.getElementById("rowContainer").appendChild(myRow);
+		}
 		</script>
+
 		<footer> Trang web được thiết kế bởi VŨ THỊ NHỰT ĐANG@2026 trên html tĩnh</footer>
 	</body>
 </html>

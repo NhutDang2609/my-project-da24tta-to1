@@ -57,8 +57,9 @@
 		const  thanhtien = document.getElementsByClassName("tt");
 		let tong=0;
 		for(let i=0; i< dongia.length; i++){
-			thanhtien[i].innerHTML =parseInt (soluong [i].innerHTML)* parseInt (dongia [i].innerHTML);
-			tong = parseInt (thanhtien[i].innerHTML);
+			let tt = parseInt (soluong [i].innerHTML)* parseInt (dongia [i].innerHTML);
+			thanhtien[i].innerHTML = tt;
+			tong += tt;
 
 		}
 		document.getElementById("tong").innerHTML = tong;
