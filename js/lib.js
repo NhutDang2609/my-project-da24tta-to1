@@ -1,8 +1,12 @@
 ﻿const productDatabase = [
   {id:1, name:"Hoa Oải Hương", price:200000, img:"../assets/nen4.jpg"},
-  {id:2, name:" HoaTulip", price:10000, img:"../assets/dang.jpg"},
+  {id:2, name:" HoaTulip", price:15000, img:"../assets/dang.jpg"},
   {id:3, name:"Hoa Cúc", price:100000, img:"../assets/nen1.jpg"},
-  {id:4, name:"Hoa Hồng", price:180000, img:"../assets/hoa hồng.webp"}
+  {id:4, name:"Hoa Hồng", price:180000, img:"../assets/hoa hồng.webp"},
+ {id:5, name:"Hoa Cẩm Tú Cầu", price:190000, img:"../assets/lam.jpg"},
+{id:6, name:"Hoa Nhái", price:18000, img:"../assets/hinh1.jpg"},
+{id:7, name:"Hoa Linh Lan", price:1000000, img:"../assets/hinh2.jpeg"},
+{id:8, name:"Hoa Lưu Ly", price:300000, img:"../assets/hinh3.jpg"},
 ];
 
 function addProduct(imgSrc, name, price, linkUrl) {
