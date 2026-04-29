@@ -34,52 +34,6 @@ nav .thanhba:hover {
   color: #7b4ca0;
 }
 
-/* Khung hóa đơn */
-.nen {
-  background: #ffffff;
-  margin: 40px auto;
-  padding: 30px;
-  border-radius: 16px;
-  border: 3px solid #b799d6; /* viền tím footer */
-  max-width: 800px;
-  box-shadow: 0 0 20px rgba(183, 153, 214, 0.6),
-              0 0 40px rgba(183, 153, 214, 0.4),
-              0 0 60px rgba(183, 153, 214, 0.3);
-width:650px;
-
-}
-
-.nen h3 {
-  text-align: center;
-  color: #7b4ca0;
-  margin-bottom: 20px;
-}
-
-/* Bảng hóa đơn */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-}
-
-table th, table td {
-  border: 1px solid #b799d6;
-  padding: 10px;
-  text-align: center;
-}
-
-table th {
-  background-color: #9966CC;
-  color: #fff;
-}
-
-table tr:nth-child(even) {
-  background-color: #f3ecfa; /* hàng chẵn nhạt tím */
-}
-
-table tr:hover {
-  background-color: #e6d9f2; /* hiệu ứng hover */
-}
 
 /* Footer */
 footer {
