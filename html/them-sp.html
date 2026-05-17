@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <title>THÊM SẢN PHẨM</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="../css/style7.css">
+  <script src="../js/lib.js"></script>
+</head>
+<body>
+<nav>
+  <a class="thanhba" href="../index.html">TRANG CHỦ</a>
+  <a class="thanhba" href="page7.html">SẢN PHẨM</a>
+</nav>
+
+<div class="container mt-5" style="max-width: 600px;">
+  <h3 class="mb-4 text-success">➕ Thêm sản phẩm mới</h3>
+
+  <div class="mb-3">
+    <label class="form-label fw-bold">Tên sản phẩm <span class="text-danger">*</span></label>
+    <input type="text" id="inp-ten" class="form-control" placeholder="Nhập tên sản phẩm...">
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label fw-bold">Giá (VND) <span class="text-danger">*</span></label>
+    <input type="number" id="inp-gia" class="form-control" placeholder="Nhập giá sản phẩm...">
+  </div>
+
+
+<div class="mb-3">
+  <label class="form-label fw-bold">Hình ảnh</label>
+  <input type="file" id="inp-hinh" class="form-control" accept="image/*">
+  <img id="preview-hinh" src="" alt="" 
+       style="display:none; margin-top:10px; width:100%; max-height:200px; object-fit:cover; border-radius:8px;">
+</div>
+
+
+
+  <div class="mb-3">
+    <label class="form-label fw-bold">Mô tả</label>
+    <textarea id="inp-mo-ta" class="form-control" rows="5" placeholder="Nhập mô tả sản phẩm..."></textarea>
+  </div>
+
+  <div id="thong-bao" class="mb-3" style="display:none;"></div>
+
+  <div class="d-flex gap-2">
+    <button class="btn btn-success flex-fill" onclick="handleThem()">✅ Thêm sản phẩm</button>
+    <a href="page7.html" class="btn btn-secondary flex-fill">← Quay lại</a>
+  </div>
+</div>
+
+<script>
+  // Xem trước ảnh khi chọn file
+  document.getElementById("inp-hinh").addEventListener("change", function() {
+    const file = this.files[0];
+    const preview = document.getElementById("preview-hinh");
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        preview.src = e.target.result;
+        preview.style.display = "block";
+      };
+      reader.readAsDataURL(file);
+    }
+  });
+
+  function handleThem() {
+    const ten   = document.getElementById("inp-ten").value.trim();
+    const gia   = document.getElementById("inp-gia").value.trim();
+    const moTa  = document.getElementById("inp-mo-ta").value.trim();
+    const hinh  = document.getElementById("preview-hinh").src; // ✅ lấy ảnh đã chọn
+    const thongBao = document.getElementById("thong-bao");
+
+    if (!ten || !gia) {
+      thongBao.style.display = "block";
+      thongBao.className = "mb-3 alert alert-danger";
+      thongBao.textContent = "⚠️ Vui lòng nhập Tên và Giá sản phẩm!";
+      return;
+    }
+
+    const added = JSON.parse(localStorage.getItem("shopAddedProducts") || "[]");
+    const allIds = [...productDatabase, ...added].map(p => p.id);
+    const newId = allIds.length > 0 ? Math.max(...allIds) + 1 : 1;
+
+    added.push({
+      id: newId,
+      name: ten,
+      price: Number(gia),
+      img: hinh || "../assets/nen1.jpg", // ✅ dùng ảnh đã chọn, nếu không có dùng ảnh mặc định
+      productLink: "detail.html",
+      desc: moTa
+    });
+    localStorage.setItem("shopAddedProducts", JSON.stringify(added));
+
+    thongBao.style.display = "block";
+    thongBao.className = "mb-3 alert alert-success";
+    thongBao.textContent = "✅ Đã thêm \"" + ten + "\" thành công!";
+
+    document.getElementById("inp-ten").value = "";
+    document.getElementById("inp-gia").value = "";
+    document.getElementById("inp-mo-ta").value = "";
+    document.getElementById("inp-hinh").value = "";
+    document.getElementById("preview-hinh").style.display = "none";
+
+    setTimeout(() => { window.location.href = "page7.html"; }, 1500);
+  }
+</script>
+<footer>Trang web được thiết kế bởi VŨ THỊ NHỰT ĐANG@2026 trên html tĩnh</footer>
+</body>
+</html>

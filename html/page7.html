@@ -18,6 +18,7 @@
   <a class="thanhba" href="page5.html">IN BẢNG CỬU CHƯƠNG</a>
   <a class="thanhba" href="page6.html">BẢNG HỌC PHÍ</a>
   <a class="thanhba" href="page7.html">SẢN PHẨM</a>
+<a href="kho-an.html" class="btn btn-outline-danger">🗃 Kho ẩn</a>
   
 </nav>
 
@@ -26,7 +27,11 @@
 </div>
 
 <script>
-  loadProducts(productDatabase);  <!-- ✅ giờ lib.js đã load xong trước -->
+  const deletedIds = JSON.parse(localStorage.getItem("shopDeletedIds") || "[]");
+  const addedProducts = JSON.parse(localStorage.getItem("shopAddedProducts") || "[]");
+  const allProducts = [...productDatabase, ...addedProducts];
+  const visibleProducts = allProducts.filter(p => !deletedIds.includes(p.id));
+  loadProducts(visibleProducts);
 </script>
 
 <footer>Trang web được thiết kế bởi VŨ THỊ NHỰT ĐANG@2026 trên html tĩnh</footer>
