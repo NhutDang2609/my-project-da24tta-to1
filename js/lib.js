@@ -47,7 +47,7 @@ function addProduct_v2(product) {
   myP1.textContent = product.name;
 
   const myP2 = document.createElement("p");
-  myP2.textContent = product.price.toLocaleString() + " VND";
+  myP2.textContent = product.price.toLocaleString() + " VND/Cây";
 
   const myLink = document.createElement("a");
   myLink.setAttribute("href", "detail.html?id=" + product.id);
