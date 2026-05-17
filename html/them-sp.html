@@ -15,7 +15,7 @@
 </nav>
 
 <div class="container mt-5" style="max-width: 600px;">
-  <h3 class="mb-4 text-success">➕ Thêm sản phẩm mới</h3>
+  <h3 class="mb-4 text-success"> Thêm sản phẩm mới</h3>
 
   <div class="mb-3">
     <label class="form-label fw-bold">Tên sản phẩm <span class="text-danger">*</span></label>
@@ -45,7 +45,7 @@
   <div id="thong-bao" class="mb-3" style="display:none;"></div>
 
   <div class="d-flex gap-2">
-    <button class="btn btn-success flex-fill" onclick="handleThem()">✅ Thêm sản phẩm</button>
+    <button class="btn btn-success flex-fill" onclick="handleThem()"> Thêm sản phẩm</button>
     <a href="page7.html" class="btn btn-secondary flex-fill">← Quay lại</a>
   </div>
 </div>
@@ -69,13 +69,13 @@
     const ten   = document.getElementById("inp-ten").value.trim();
     const gia   = document.getElementById("inp-gia").value.trim();
     const moTa  = document.getElementById("inp-mo-ta").value.trim();
-    const hinh  = document.getElementById("preview-hinh").src; // ✅ lấy ảnh đã chọn
+    const hinh  = document.getElementById("preview-hinh").src; //  lấy ảnh đã chọn
     const thongBao = document.getElementById("thong-bao");
 
     if (!ten || !gia) {
       thongBao.style.display = "block";
       thongBao.className = "mb-3 alert alert-danger";
-      thongBao.textContent = "⚠️ Vui lòng nhập Tên và Giá sản phẩm!";
+      thongBao.textContent = " Vui lòng nhập Tên và Giá sản phẩm!";
       return;
     }
 
@@ -87,7 +87,7 @@
       id: newId,
       name: ten,
       price: Number(gia),
-      img: hinh || "../assets/nen1.jpg", // ✅ dùng ảnh đã chọn, nếu không có dùng ảnh mặc định
+      img: hinh || "../assets/nen1.jpg", //  dùng ảnh đã chọn, nếu không có dùng ảnh mặc định
       productLink: "detail.html",
       desc: moTa
     });
@@ -95,7 +95,7 @@
 
     thongBao.style.display = "block";
     thongBao.className = "mb-3 alert alert-success";
-    thongBao.textContent = "✅ Đã thêm \"" + ten + "\" thành công!";
+    thongBao.textContent = " Đã thêm \"" + ten + "\" thành công!";
 
     document.getElementById("inp-ten").value = "";
     document.getElementById("inp-gia").value = "";
