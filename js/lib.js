@@ -27,7 +27,7 @@ function addProduct_v2(product) {
   if (!container) return; // tránh lỗi nếu không tìm thấy
 
   const myDiv = document.createElement("div");
-  myDiv.setAttribute("class", "product-item col-sm-4 mb-4"); // ✅ thêm Bootstrap col
+  myDiv.setAttribute("class", "product-item col-sm-4 mb-4"); 
 
   const myDiv1 = document.createElement("div");
   myDiv1.setAttribute("class", "product-image");
@@ -35,7 +35,7 @@ function addProduct_v2(product) {
   const productImg = document.createElement("img");
   productImg.setAttribute("src", product.img);
   productImg.setAttribute("alt", product.name);
-  productImg.setAttribute("class", "img-fluid"); // ✅ ảnh responsive
+  productImg.setAttribute("class", "img-fluid"); 
 
   myDiv1.appendChild(productImg);
   myDiv.appendChild(myDiv1);
